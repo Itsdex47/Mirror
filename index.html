@@ -5,6 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Mirror</title>
+    
+    <!-- PWA Primary Meta Tags -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Mirror - Prediction Market Intelligence" />
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- iOS / Apple Specific Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Mirror" />
+    <link rel="apple-touch-icon" href="https://api.dicebear.com/7.x/shapes/svg?seed=Mirror&backgroundColor=000000" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -108,6 +120,13 @@
 
       ::-webkit-scrollbar {
         display: none;
+      }
+
+      /* Native App feel: Disable text selection and bounce */
+      body {
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        overscroll-behavior-y: none;
       }
     </style>
     <script type="importmap">
