@@ -1,0 +1,5 @@
+{
+  "name": "Mirror - Prediction Market Intelligence",
+  "description": "A mobile-first interface for prediction markets that aggregates related markets, surfaces relative-value signals, and enables simple trade execution.",
+  "requestFramePermissions": []
+}
